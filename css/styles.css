@@ -1,0 +1,128 @@
+:root {
+    --moonlight-asteroid: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+    --dawn: linear-gradient(to right, #F3904F, #3B4371);
+    --red-ocean: linear-gradient(to right, #1D4350, #A43931);
+    --cool-blues: linear-gradient(to right, #2193b0, #6dd5ed);
+    --by-desings: linear-gradient(to right, #009FFF, #ec2F4B);
+    --grade-grey: linear-gradient(to right, #2c3e50, #bdc3c7, #2c3e50);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: var(--moonlight-asteroid);
+}
+
+.header {
+    background: var(--red-ocean);
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 1.5em;
+}
+
+h1 {
+    margin: 1rem 0;
+    color: white;
+}
+
+.bg-container {
+    background: var(--cool-blues);
+    width: 350px;
+    height: 500px;
+    border-radius: 5%;
+    border: 2px solid #000;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head,
+.body,
+.arm,
+.leg {
+    border-radius: 5%;
+}
+
+.robot{
+    border: 2px solid #000;
+    background: var(--grade-grey);
+    position: absolute;
+}
+
+.head,
+.mouth,
+.body {
+    /* cuando se tiene position: absolute, para centrar HORIZONTALMENTE un elemento, se usa las 2 lineas de abajo */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.head{
+    height: 100px;
+    width: 100px;
+    top: 20px;
+}
+
+.eye,
+.mouth{
+    background: #000;
+}
+
+.eye{
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    top: 20px;
+}
+
+.left-eye{
+    left: 20px;
+}
+
+.right-eye{
+    right: 20px;
+}
+
+.mouth{
+    height: 8px;
+    width: 60px;
+    bottom: 25px;
+}
+
+.body{
+    height: 200px;
+    width: 150px;
+    top: 118px;
+}
+
+.arm{
+    width: 40px;
+    height: 170px;
+    top: 118px;
+}
+
+.left--arm{
+    left: 60px;
+}
+
+.right--arm{
+    right: 60px;
+}
+
+.leg{
+    width: 50px;
+    height: 170px;
+    top: 317px;
+}
+
+.left--leg{
+    left: 105px;
+}
+
+.right--leg{
+    right: 105px;
+}
